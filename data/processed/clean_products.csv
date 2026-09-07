@@ -1,0 +1,192 @@
+product_id,product_name,category,type,selling_price,cost_price,unit
+RR001,Fotocopy Hitam Putih,Jasa Fotocopy,Service,500.00,200.00,lembar
+RR002,Fotocopy Warna,Jasa Fotocopy,Service,2000.00,600.00,lembar
+RR003,Print Hitam Putih,Jasa Printing,Service,1000.00,400.00,lembar
+RR004,Print Warna,Jasa Printing,Service,3000.00,1200.00,lembar
+RR005,Print Foto 2R,Jasa Printing,Service,2000.00,800.00,lembar
+RR006,Print Foto 3R,Jasa Printing,Service,2500.00,1000.00,lembar
+RR007,Print Foto 4R,Jasa Printing,Service,4000.00,1600.00,lembar
+RR008,Print Foto 5R,Jasa Printing,Service,6000.00,2500.00,lembar
+RR009,Print Foto 8R,Jasa Printing,Service,15000.00,6000.00,lembar
+RR010,Print Foto A4,Jasa Printing,Service,10000.00,4000.00,lembar
+RR011,Scan Dokumen,Jasa Digital,Service,3000.00,800.00,layanan
+RR012,Pengetikan Dokumen,Jasa Digital,Service,5000.00,1200.00,lembar
+RR013,Laminating,Jasa Laminating,Service,5000.00,2000.00,layanan
+RR014,Jilid Spiral Kecil,Jasa Penjilidan,Service,7000.00,3000.00,layanan
+RR015,Jilid Spiral Sedang,Jasa Penjilidan,Service,10000.00,4500.00,layanan
+RR016,Jilid Spiral Besar,Jasa Penjilidan,Service,15000.00,7000.00,layanan
+RR017,Jilid Lakban,Jasa Penjilidan,Service,7000.00,3000.00,layanan
+RR018,Jilid Hardcover,Jasa Penjilidan,Service,35000.00,16000.00,layanan
+RR019,Jilid Softcover,Jasa Penjilidan,Service,20000.00,9000.00,layanan
+RR020,Cetak Kartu Nama,Jasa Percetakan,Service,40000.00,20000.00,layanan
+RR021,Cetak Undangan,Jasa Percetakan,Service,5000.00,2500.00,layanan
+RR022,Cetak Brosur,Jasa Percetakan,Service,2500.00,1200.00,layanan
+RR023,Cetak Flyer,Jasa Percetakan,Service,2000.00,1000.00,layanan
+RR024,Cetak Poster A4,Jasa Percetakan,Service,10000.00,5000.00,layanan
+RR025,Cetak Poster A3,Jasa Percetakan,Service,18000.00,9000.00,layanan
+RR026,Cetak Sertifikat,Jasa Percetakan,Service,8000.00,4000.00,layanan
+RR027,Cetak Stiker,Jasa Percetakan,Service,15000.00,7500.00,layanan
+RR028,Cetak Label Produk,Jasa Percetakan,Service,10000.00,5000.00,layanan
+RR029,Cetak Kop Surat,Jasa Percetakan,Service,25000.00,12000.00,layanan
+RR030,Cetak Nota,Jasa Percetakan,Service,30000.00,15000.00,layanan
+RR031,Cetak Kwitansi,Jasa Percetakan,Service,30000.00,15000.00,layanan
+RR032,Cetak ID Card,Jasa Percetakan,Service,20000.00,10000.00,layanan
+RR033,Cetak Kartu Pelajar,Jasa Percetakan,Service,20000.00,10000.00,layanan
+RR034,Cetak Kartu Anggota,Jasa Percetakan,Service,20000.00,10000.00,layanan
+RR035,Cetak Menu,Jasa Percetakan,Service,15000.00,7500.00,layanan
+RR036,Cetak Kalender,Jasa Percetakan,Service,25000.00,12000.00,layanan
+RR037,Cetak Cover Buku,Jasa Percetakan,Service,10000.00,5000.00,layanan
+RR038,Kertas HVS A4 70 gsm,Kertas,Product,38000.00,31000.00,rim
+RR039,Kertas HVS A4 80 gsm,Kertas,Product,45000.00,37000.00,rim
+RR040,Kertas HVS F4 70 gsm,Kertas,Product,45000.00,37000.00,rim
+RR041,Kertas HVS F4 80 gsm,Kertas,Product,52000.00,43000.00,rim
+RR042,Kertas HVS A3 70 gsm,Kertas,Product,75000.00,61000.00,rim
+RR043,Kertas HVS A3 80 gsm,Kertas,Product,85000.00,70000.00,rim
+RR044,Kertas Buffalo Putih,Kertas,Product,18000.00,15000.00,pack
+RR045,Kertas Buffalo Warna,Kertas,Product,22000.00,18000.00,pack
+RR046,Kertas Manila Putih,Kertas,Product,12000.00,10000.00,pack
+RR047,Kertas Manila Warna,Kertas,Product,15000.00,12000.00,pack
+RR048,Kertas Karton Putih,Kertas,Product,15000.00,12000.00,pack
+RR049,Kertas Karton Warna,Kertas,Product,18000.00,15000.00,pack
+RR050,Kertas Origami,Kertas,Product,10000.00,8000.00,pack
+RR051,Kertas Kado,Kertas,Product,12000.00,10000.00,pack
+RR052,Buku Tulis 38 Lembar,Buku & Notebook,Product,4000.00,3000.00,pcs
+RR053,Buku Tulis 58 Lembar,Buku & Notebook,Product,5000.00,3500.00,pcs
+RR054,Buku Tulis 100 Lembar,Buku & Notebook,Product,10000.00,7000.00,pcs
+RR055,Buku Tulis A5,Buku & Notebook,Product,6000.00,4500.00,pcs
+RR056,Buku Tulis A4,Buku & Notebook,Product,12000.00,8500.00,pcs
+RR057,Buku Agenda Harian,Buku & Notebook,Product,20000.00,14000.00,pcs
+RR058,Buku Agenda Mingguan,Buku & Notebook,Product,22000.00,16000.00,pcs
+RR059,Notebook A5,Buku & Notebook,Product,12000.00,8500.00,pcs
+RR060,Notebook A6,Buku & Notebook,Product,8000.00,6000.00,pcs
+RR061,Buku Gambar A4,Buku & Notebook,Product,6000.00,4500.00,pcs
+RR062,Buku Gambar A3,Buku & Notebook,Product,10000.00,7000.00,pcs
+RR063,Buku Kotak,Buku & Notebook,Product,5000.00,3500.00,pcs
+RR064,Buku Catatan Spiral,Buku & Notebook,Product,12000.00,8500.00,pcs
+RR065,Buku Diary,Buku & Notebook,Product,18000.00,13000.00,pcs
+RR066,Buku Kwitansi Kecil,Buku & Administrasi,Product,6000.00,4500.00,pcs
+RR067,Buku Kwitansi Besar,Buku & Administrasi,Product,10000.00,7000.00,pcs
+RR068,Buku Nota 1 Ply,Buku & Administrasi,Product,5000.00,3500.00,pcs
+RR069,Buku Nota 2 Ply,Buku & Administrasi,Product,8000.00,6000.00,pcs
+RR070,Buku Nota 3 Ply,Buku & Administrasi,Product,10000.00,7000.00,pcs
+RR071,Buku Kas,Buku & Administrasi,Product,12000.00,8500.00,pcs
+RR072,Buku Ekspedisi,Buku & Administrasi,Product,12000.00,8500.00,pcs
+RR073,Buku Folio,Buku & Administrasi,Product,10000.00,7000.00,pcs
+RR074,Buku Tamu,Buku & Administrasi,Product,18000.00,13000.00,pcs
+RR075,Buku Absensi,Buku & Administrasi,Product,15000.00,11000.00,pcs
+RR076,Pulpen Hitam,Alat Tulis,Product,2500.00,1800.00,pcs
+RR077,Pulpen Biru,Alat Tulis,Product,2500.00,1800.00,pcs
+RR078,Pulpen Merah,Alat Tulis,Product,2500.00,1800.00,pcs
+RR079,Pulpen Gel Hitam,Alat Tulis,Product,5000.00,3500.00,pcs
+RR080,Pulpen Gel Biru,Alat Tulis,Product,5000.00,3500.00,pcs
+RR081,Pulpen Gel Merah,Alat Tulis,Product,5000.00,3500.00,pcs
+RR082,Pulpen Retractable,Alat Tulis,Product,4000.00,3000.00,pcs
+RR083,Pensil 2B,Alat Tulis,Product,3000.00,2000.00,pcs
+RR084,Pensil HB,Alat Tulis,Product,3000.00,2000.00,pcs
+RR085,Pensil 2H,Alat Tulis,Product,3000.00,2000.00,pcs
+RR086,Pensil Mekanik 0.5 mm,Alat Tulis,Product,8000.00,5500.00,pcs
+RR087,Pensil Mekanik 0.7 mm,Alat Tulis,Product,8000.00,5500.00,pcs
+RR088,Isi Pensil 0.5 mm,Alat Tulis,Product,5000.00,3500.00,pcs
+RR089,Isi Pensil 0.7 mm,Alat Tulis,Product,5000.00,3500.00,pcs
+RR090,Penghapus Pensil,Alat Tulis,Product,3000.00,2000.00,pcs
+RR091,Penghapus Pulpen,Alat Tulis,Product,5000.00,3500.00,pcs
+RR092,Penggaris 15 cm,Alat Tulis,Product,3000.00,2000.00,pcs
+RR093,Penggaris 30 cm,Alat Tulis,Product,5000.00,3500.00,pcs
+RR094,Penggaris Besi 30 cm,Alat Tulis,Product,12000.00,8500.00,pcs
+RR095,Penggaris Segitiga,Alat Tulis,Product,8000.00,5500.00,pcs
+RR096,Busur Derajat,Alat Tulis,Product,5000.00,3500.00,pcs
+RR097,Jangka,Alat Tulis,Product,15000.00,10000.00,pcs
+RR098,Stabilo Kuning,Alat Tulis,Product,8000.00,5500.00,pcs
+RR099,Stabilo Pink,Alat Tulis,Product,8000.00,5500.00,pcs
+RR100,Stabilo Hijau,Alat Tulis,Product,8000.00,5500.00,pcs
+RR101,Stabilo Biru,Alat Tulis,Product,8000.00,5500.00,pcs
+RR102,Spidol Permanen Hitam,Alat Tulis,Product,12000.00,8500.00,pcs
+RR103,Spidol Permanen Biru,Alat Tulis,Product,12000.00,8500.00,pcs
+RR104,Spidol Whiteboard Hitam,Alat Tulis,Product,10000.00,7000.00,pcs
+RR105,Spidol Whiteboard Merah,Alat Tulis,Product,10000.00,7000.00,pcs
+RR106,Marker Warna,Alat Tulis,Product,12000.00,8500.00,pcs
+RR107,Correction Tape,Alat Tulis,Product,8000.00,5500.00,pcs
+RR108,Tipe-X Cair,Alat Tulis,Product,6000.00,4000.00,pcs
+RR109,Rautan Pensil,Alat Tulis,Product,3000.00,2000.00,pcs
+RR110,Crayon,Alat Tulis,Product,18000.00,13000.00,pcs
+RR111,Pensil Warna,Alat Tulis,Product,25000.00,18000.00,pcs
+RR112,Spidol Warna,Alat Tulis,Product,30000.00,21000.00,pcs
+RR113,Lem Kertas Stick,Perlengkapan Kantor,Product,8000.00,6000.00,pcs
+RR114,Lem Cair,Perlengkapan Kantor,Product,5000.00,3500.00,pcs
+RR115,Lem Fox,Perlengkapan Kantor,Product,12000.00,8500.00,pcs
+RR116,Gunting Kecil,Perlengkapan Kantor,Product,8000.00,6000.00,pcs
+RR117,Gunting Besar,Perlengkapan Kantor,Product,18000.00,13000.00,pcs
+RR118,Cutter Kecil,Perlengkapan Kantor,Product,5000.00,3500.00,pcs
+RR119,Cutter Besar,Perlengkapan Kantor,Product,12000.00,8500.00,pcs
+RR120,Isi Cutter,Perlengkapan Kantor,Product,5000.00,3500.00,pcs
+RR121,Stapler Mini,Perlengkapan Kantor,Product,8000.00,6000.00,pcs
+RR122,Stapler Sedang,Perlengkapan Kantor,Product,15000.00,11000.00,pcs
+RR123,Stapler Besar,Perlengkapan Kantor,Product,30000.00,22000.00,pcs
+RR124,Isi Staples No. 10,Perlengkapan Kantor,Product,4000.00,3000.00,pcs
+RR125,Isi Staples No. 3,Perlengkapan Kantor,Product,6000.00,4500.00,pcs
+RR126,Isi Staples No. 24/6,Perlengkapan Kantor,Product,8000.00,6000.00,pcs
+RR127,Paper Clip Kecil,Perlengkapan Kantor,Product,5000.00,3500.00,pcs
+RR128,Paper Clip Besar,Perlengkapan Kantor,Product,8000.00,6000.00,pcs
+RR129,Binder Clip 15 mm,Perlengkapan Kantor,Product,6000.00,4500.00,pcs
+RR130,Binder Clip 25 mm,Perlengkapan Kantor,Product,10000.00,7000.00,pcs
+RR131,Binder Clip 32 mm,Perlengkapan Kantor,Product,15000.00,11000.00,pcs
+RR132,Binder Clip 41 mm,Perlengkapan Kantor,Product,20000.00,14000.00,pcs
+RR133,Push Pin,Perlengkapan Kantor,Product,8000.00,6000.00,pcs
+RR134,Paku Payung,Perlengkapan Kantor,Product,5000.00,3500.00,pcs
+RR135,Karet Gelang,Perlengkapan Kantor,Product,8000.00,6000.00,pcs
+RR136,Lakban Bening,Perlengkapan Kantor,Product,10000.00,7000.00,pcs
+RR137,Lakban Cokelat,Perlengkapan Kantor,Product,12000.00,8500.00,pcs
+RR138,Double Tape,Perlengkapan Kantor,Product,8000.00,6000.00,pcs
+RR139,Masking Tape,Perlengkapan Kantor,Product,10000.00,7000.00,pcs
+RR140,Dispenser Lakban,Perlengkapan Kantor,Product,25000.00,18000.00,pcs
+RR141,Amplop Putih Kecil,Perlengkapan Surat,Product,500.00,300.00,pcs
+RR142,Amplop Putih Besar,Perlengkapan Surat,Product,1000.00,600.00,pcs
+RR143,Amplop Cokelat A4,Perlengkapan Surat,Product,1500.00,1000.00,pcs
+RR144,Amplop Cokelat F4,Perlengkapan Surat,Product,2000.00,1300.00,pcs
+RR145,Amplop Kabinet,Perlengkapan Surat,Product,2500.00,1600.00,pcs
+RR146,Map Plastik A4,Filing & Arsip,Product,3000.00,2000.00,pcs
+RR147,Map Plastik F4,Filing & Arsip,Product,4000.00,3000.00,pcs
+RR148,Map Kertas,Filing & Arsip,Product,2000.00,1400.00,pcs
+RR149,Map Kancing,Filing & Arsip,Product,5000.00,3500.00,pcs
+RR150,Map Resleting,Filing & Arsip,Product,10000.00,7000.00,pcs
+RR151,Map Snelhecter,Filing & Arsip,Product,5000.00,3500.00,pcs
+RR152,Clear Holder 20 Pocket,Filing & Arsip,Product,22000.00,16000.00,pcs
+RR153,Clear Holder 40 Pocket,Filing & Arsip,Product,30000.00,22000.00,pcs
+RR154,Clear Holder 60 Pocket,Filing & Arsip,Product,40000.00,29000.00,pcs
+RR155,Ordner A4,Filing & Arsip,Product,30000.00,22000.00,pcs
+RR156,Ordner F4,Filing & Arsip,Product,35000.00,25000.00,pcs
+RR157,Box File,Filing & Arsip,Product,30000.00,22000.00,pcs
+RR158,Divider Binder,Filing & Arsip,Product,10000.00,7000.00,pcs
+RR159,Sheet Protector,Filing & Arsip,Product,2000.00,1400.00,pcs
+RR160,Label Nama,Label & Identifikasi,Product,2000.00,1400.00,pcs
+RR161,Label Harga,Label & Identifikasi,Product,3000.00,2000.00,pcs
+RR162,Stiker Nama,Label & Identifikasi,Product,3000.00,2000.00,pcs
+RR163,Name Tag Plastik,Label & Identifikasi,Product,5000.00,3500.00,pcs
+RR164,Tali ID Card,Label & Identifikasi,Product,5000.00,3500.00,pcs
+RR165,Holder ID Card,Label & Identifikasi,Product,3000.00,2000.00,pcs
+RR166,Plastik Laminating A4,Bahan Laminating,Product,60000.00,49000.00,pack
+RR167,Rautan Pensil,Alat Tulis,Product,3000.00,2000.00,pcs
+RR168,Topi SMP,Perlengkapan Sekolah,Product,18000.00,13000.00,pcs
+RR169,Topi SMA,Perlengkapan Sekolah,Product,18000.00,13000.00,pcs
+RR170,Baret Pramuka,Perlengkapan Sekolah,Product,25000.00,18000.00,pcs
+RR171,Kacu Pramuka,Perlengkapan Sekolah,Product,15000.00,11000.00,pcs
+RR172,Flashdisk 8GB,Elektronik & Aksesori,Product,55000.00,45000.00,pcs
+RR173,Flashdisk 16GB,Elektronik & Aksesori,Product,75000.00,61000.00,pcs
+RR174,Flashdisk 32GB,Elektronik & Aksesori,Product,95000.00,78000.00,pcs
+RR175,Flashdisk 64GB,Elektronik & Aksesori,Product,130000.00,107000.00,pcs
+RR176,Rautan Giling,Alat Tulis,Product,25000.00,18000.00,pcs
+RR177,Balon,Perlengkapan Umum,Product,2000.00,1300.00,pcs
+RR178,Raket Badminton,Perlengkapan Olahraga,Product,70000.00,55000.00,pcs
+RR179,Iqra Kecil,Buku Keagamaan,Product,12000.00,9000.00,pcs
+RR180,Iqra Besar,Buku Keagamaan,Product,18000.00,14000.00,pcs
+RR181,Juz Amma,Buku Keagamaan,Product,18000.00,14000.00,pcs
+RR182,Al Qur'an Kecil,Buku Keagamaan,Product,45000.00,34000.00,pcs
+RR183,Al Qur'an Besar,Buku Keagamaan,Product,85000.00,64000.00,pcs
+RR184,Tempat Pensil,Perlengkapan Sekolah,Product,15000.00,11000.00,pcs
+RR185,Dasi SD,Perlengkapan Sekolah,Product,10000.00,7000.00,pcs
+RR186,Topi SD,Perlengkapan Sekolah,Product,15000.00,11000.00,pcs
+RR187,Dasi SMP,Perlengkapan Sekolah,Product,12000.00,8500.00,pcs
+RR188,Dasi SMA,Perlengkapan Sekolah,Product,12000.00,8500.00,pcs
+RR189,Bingkai Foto 10R,Aksesori,Product,35000.00,25000.00,pcs
+RR190,Kalkulator,Elektronik & Aksesori,Product,100000.00,82000.00,pcs
+RR191,Gunting Lipat Kecil,Perlengkapan Kantor,Product,10000.00,7000.00,pcs

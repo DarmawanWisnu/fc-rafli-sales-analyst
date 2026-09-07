@@ -1,0 +1,13 @@
+target,model,mae,rmse,wape_or_smape,validation_period,selected_flag
+order_count,Mean Baseline,4.91,6.43,41.79,2026-01-04 to 2026-01-31,False
+order_count,Naive Last-Value,8.82,10.02,75.08,2026-01-04 to 2026-01-31,False
+order_count,Seasonal Naive 7D,8.68,10.09,73.86,2026-01-04 to 2026-01-31,False
+order_count,7-Day Moving Average,6.19,7.89,52.67,2026-01-04 to 2026-01-31,False
+order_count,Holt-Winters,6.27,7.92,53.35,2026-01-04 to 2026-01-31,False
+order_count,SARIMA,4.4,5.96,37.42,2026-01-04 to 2026-01-31,True
+revenue,Mean Baseline,59077.14,92965.36,50.17,2026-01-04 to 2026-01-31,True
+revenue,Naive Last-Value,169750.0,187478.09,144.16,2026-01-04 to 2026-01-31,False
+revenue,Seasonal Naive 7D,105250.0,134351.95,89.38,2026-01-04 to 2026-01-31,False
+revenue,7-Day Moving Average,59306.12,93198.96,50.37,2026-01-04 to 2026-01-31,False
+revenue,Holt-Winters,65995.76,82764.79,56.05,2026-01-04 to 2026-01-31,False
+revenue,SARIMA,153071.51,161290.27,130.0,2026-01-04 to 2026-01-31,False
