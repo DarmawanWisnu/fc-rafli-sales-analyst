@@ -1,7 +1,9 @@
 <div align="center">
 
 # 📊 Enterprise Retail Sales & Demand Analytics Report
+
 ### Toko Fotocopy & Percetakan Raffa Rafli (RR Analytics)
+
 **Comprehensive End-to-End Business Intelligence, Data Engineering & Time-Series Forecasting**
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14+-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
@@ -9,7 +11,7 @@
 [![Power BI](https://img.shields.io/badge/Power_BI-Semantic_Model-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-Power_Query-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://www.microsoft.com/excel)
 [![Time Series](https://img.shields.io/badge/Forecasting-SARIMA_%26_Statsmodels-FF6F00?style=for-the-badge&logo=scikitlearn&logoColor=white)](https://www.statsmodels.org/)
-[![Data Integrity](https://img.shields.io/badge/Data_Audit-100%25_Reconciled_(Rp_0.00_Diff)-brightgreen?style=for-the-badge)](sql/03_quality_checks.sql)
+[![Data Integrity](<https://img.shields.io/badge/Data_Audit-100%25_Reconciled_(Rp_0.00_Diff)-brightgreen?style=for-the-badge>)](sql/03_quality_checks.sql)
 
 ```
 [ Domain: Retail & Printing Services ] • [ Period: 1 Sep 2025 - 31 Jan 2026 (153 Days) ] • [ Grain: 1,423 Orders / 1,739 Lines ]
@@ -24,13 +26,13 @@
 ---
 
 > [!NOTE]  
-> **Konsep Dokumen:** Laporan ini menggabungkan **Laporan Keputusan Bisnis Eksekutif** untuk Owner Toko Fotocopy Raffa Rafli dengan **Dokumentasi Teknis Standar Industri** (*Data Engineering, Relational Modeling, Business Intelligence, dan Predictive Analytics*).
+> **Konsep Dokumen:** Laporan ini menggabungkan **Laporan Keputusan Bisnis Eksekutif** untuk Owner Toko Fotocopy Raffa Rafli dengan **Dokumentasi Teknis Standar Industri** (_Data Engineering, Relational Modeling, Business Intelligence, dan Predictive Analytics_).
 
 ---
 
 ## 🛠️ 1. Tech Stack & Analytics Architecture
 
-Arsitektur analitis dirancang secara modular dan *decoupled*, di mana masing-masing teknologi memegang tanggung jawab spesifik tanpa pencampuran fungsi (*single-responsibility principle*):
+Arsitektur analitis dirancang secara modular dan _decoupled_, di mana masing-masing teknologi memegang tanggung jawab spesifik tanpa pencampuran fungsi (_single-responsibility principle_):
 
 ```mermaid
 flowchart TD
@@ -71,12 +73,12 @@ flowchart TD
 
 ### Matriks Tanggung Jawab Teknologi
 
-| Layer Arsitektur | Teknologi | Fungsi & Tanggung Jawab Utama | Artefak Output |
-|---|---|---|---|
-| **Data Cleaning & QA** | `Excel Power Query` | Skema intake, standardisasi data type, audit orphan records, deteksi inkonsistensi harga master vs detail line. | `clean_*.csv`, `Fotocopy RR Analytics.xlsx` |
-| **Relational Data Warehouse** | `PostgreSQL 14+` | *Source of truth* logika bisnis, relasi star-schema, complete date spine (zero-sales preservation), window functions. | `01`–`06_*.sql`, `analytics.vw_*` |
-| **Predictive Analytics** | `Python (statsmodels)` | Holdout backtesting 6 algoritma time-series, penanganan data intermiten dengan WAPE, estimasi interval keyakinan 95%. | `forecast.py`, `forecast_daily.csv` |
-| **Semantic BI & Delivery** | `Power BI & Excel` | Semantic model star-schema, kalkulasi dinamis ukuran DAX, dashboard interaktif dengan navigasi cross-filtering. | `Dashboard Excel.png`, Visual Pages |
+| Layer Arsitektur              | Teknologi              | Fungsi & Tanggung Jawab Utama                                                                                         | Artefak Output                              |
+| ----------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| **Data Cleaning & QA**        | `Excel Power Query`    | Skema intake, standardisasi data type, audit orphan records, deteksi inkonsistensi harga master vs detail line.       | `clean_*.csv`, `Fotocopy RR Analytics.xlsx` |
+| **Relational Data Warehouse** | `PostgreSQL 14+`       | _Source of truth_ logika bisnis, relasi star-schema, complete date spine (zero-sales preservation), window functions. | `01`–`06_*.sql`, `analytics.vw_*`           |
+| **Predictive Analytics**      | `Python (statsmodels)` | Holdout backtesting 6 algoritma time-series, penanganan data intermiten dengan WAPE, estimasi interval keyakinan 95%. | `forecast.py`, `forecast_daily.csv`         |
+| **Semantic BI & Delivery**    | `Power BI & Excel`     | Semantic model star-schema, kalkulasi dinamis ukuran DAX, dashboard interaktif dengan navigasi cross-filtering.       | `Dashboard Excel.png`, Visual Pages         |
 
 ---
 
@@ -86,10 +88,10 @@ Kepada Yth. **Owner Fotocopy Raffa Rafli**,
 
 Berdasarkan audit komprehensif terhadap 1.423 transaksi senilai **Rp 12.962.000,00** selama 5 bulan operasional (1 September 2025 s.d. 31 Januari 2026), berikut adalah intisari performa bisnis toko Anda:
 
-1. **Efisiensi Margin yang Solid:** Toko menghasilkan laba kotor (*gross profit*) sebesar **Rp 5.865.200,00** dengan margin keseluruhan yang sehat di angka **45,25%**.
-2. **Ketergantungan Kuat pada Jasa (*The Profit Engine*):** Kategori Layanan Jasa (Fotocopy, Print, Scan, Jilid) adalah sumber hidup utama bisnis. Jasa menyumbang **69,56% dari total laba kotor** dengan profit margin **59,89%**, sedangkan Produk ATK fisik hanya membukukan margin **29,03%**.
+1. **Efisiensi Margin yang Solid:** Toko menghasilkan laba kotor (_gross profit_) sebesar **Rp 5.865.200,00** dengan margin keseluruhan yang sehat di angka **45,25%**.
+2. **Ketergantungan Kuat pada Jasa (_The Profit Engine_):** Kategori Layanan Jasa (Fotocopy, Print, Scan, Jilid) adalah sumber hidup utama bisnis. Jasa menyumbang **69,56% dari total laba kotor** dengan profit margin **59,89%**, sedangkan Produk ATK fisik hanya membukukan margin **29,03%**.
 3. **Peringatan Volatilitas Kalender Akademik:** Pola penjualan sangat reaktif terhadap kalender sekolah. Omzet menyusut ke titik terendah pada **Desember 2025 (Rp 2,09 jt)** akibat libur semester, lalu melonjak drastis pada **Januari 2026 (Rp 3,70 jt / +76,57% MoM)** saat tahun ajaran baru dimulai.
-4. **Hambatan Jam Operasional (*Bottleneck*):** Penjualan terkonsentrasi sangat padat pada dua jendela: **07:00 – 09:00 WIB** (pagi) dan **16:00 – 17:00 WIB** (sore), yang menguras kapasitas mesin cetak dan menyebabkan antrean panjang.
+4. **Hambatan Jam Operasional (_Bottleneck_):** Penjualan terkonsentrasi sangat padat pada dua jendela: **07:00 – 09:00 WIB** (pagi) dan **16:00 – 17:00 WIB** (sore), yang menguras kapasitas mesin cetak dan menyebabkan antrean panjang.
 
 ---
 
@@ -98,21 +100,21 @@ Berdasarkan audit komprehensif terhadap 1.423 transaksi senilai **Rp 12.962.000,
 > [!IMPORTANT]
 > **Audit Rekonsiliasi Finansial (Zero Discrepancy):**  
 > `SUM(Transactions.final_amount) [Rp 12.962.000,00]` **==** `SUM(Transaction_Details.subtotal) [Rp 12.962.000,00]`.  
-> Tidak ditemukan duplikasi order maupun ketidakcocokan nilai aritmetika (*Discrepancy: Rp 0,00 / 100% Valid*).
+> Tidak ditemukan duplikasi order maupun ketidakcocokan nilai aritmetika (_Discrepancy: Rp 0,00 / 100% Valid_).
 
 <div align="center">
 
-| Core Business KPI | Realized Value | Satuan / Tolok Ukur | Status / Catatan Evaluasi |
-|---|:---:|:---:|---|
-| **Total Pendapatan Bersih** | **Rp 12.962.000,00** | Net Revenue | Total penjualan aktual setelah diskon transaksi |
-| **Total Volume Transaksi** | **1.423** | Orders | Rata-rata 9,3 order per hari operasional |
-| **Rata-rata Nilai Transaksi (AOV)** | **Rp 9.108,92** | Basket Size | Nilai belanja tipikal pelanggan per kunjungan |
-| **Total Akumulasi Laba Kotor** | **Rp 5.865.200,00** | Gross Profit | Selisih total penjualan dengan estimasi modal unit |
-| **Rata-rata Margin Kotor** | **45,25%** | Gross Margin % | Rasio profitabilitas kotor toko |
-| **Transaksi Tertinggi (Max Order)** | **Rp 48.000,00** | Single Order Peak | Order jilid & cetak dokumen tebal institusi/mahasiswa |
-| **Transaksi Terendah (Min Order)** | **Rp 1.000,00** | Micro Order | Fotocopy eceran 1–2 lembar |
-| **Produk Terlaris (Revenue)** | **Fotocopy Hitam Putih** | Rp 2.383.500,00 | Kontributor omzet terbesar (18,39% pangsa toko) |
-| **Produk Terbanyak (Quantity)** | **Fotocopy Hitam Putih** | 5.959 Lembar | Frekuensi utilitas mesin tertinggi |
+| Core Business KPI                   |      Realized Value      | Satuan / Tolok Ukur | Status / Catatan Evaluasi                             |
+| ----------------------------------- | :----------------------: | :-----------------: | ----------------------------------------------------- |
+| **Total Pendapatan Bersih**         |   **Rp 12.962.000,00**   |     Net Revenue     | Total penjualan aktual setelah diskon transaksi       |
+| **Total Volume Transaksi**          |        **1.423**         |       Orders        | Rata-rata 9,3 order per hari operasional              |
+| **Rata-rata Nilai Transaksi (AOV)** |     **Rp 9.108,92**      |     Basket Size     | Nilai belanja tipikal pelanggan per kunjungan         |
+| **Total Akumulasi Laba Kotor**      |   **Rp 5.865.200,00**    |    Gross Profit     | Selisih total penjualan dengan estimasi modal unit    |
+| **Rata-rata Margin Kotor**          |        **45,25%**        |   Gross Margin %    | Rasio profitabilitas kotor toko                       |
+| **Transaksi Tertinggi (Max Order)** |     **Rp 48.000,00**     |  Single Order Peak  | Order jilid & cetak dokumen tebal institusi/mahasiswa |
+| **Transaksi Terendah (Min Order)**  |     **Rp 1.000,00**      |     Micro Order     | Fotocopy eceran 1–2 lembar                            |
+| **Produk Terlaris (Revenue)**       | **Fotocopy Hitam Putih** |   Rp 2.383.500,00   | Kontributor omzet terbesar (18,39% pangsa toko)       |
+| **Produk Terbanyak (Quantity)**     | **Fotocopy Hitam Putih** |    5.959 Lembar     | Frekuensi utilitas mesin tertinggi                    |
 
 </div>
 
@@ -123,6 +125,7 @@ Berdasarkan audit komprehensif terhadap 1.423 transaksi senilai **Rp 12.962.000,
 Berikut adalah hasil dekonstruksi 3 masalah bisnis krusial yang dibuktikan melalui analisis data empiris beserta solusi strategisnya:
 
 ### 🔴 Problem 01: Volatilitas Ekstrem Kalender Akademik (Revenue Instability)
+
 `Severity: CRITICAL` • `Area: Cashflow & Demand Management`
 
 ```text
@@ -134,15 +137,16 @@ Des 2025 : [Rp 2.097.500] ■■■■■■■■■■■■■ (-9.39% — Ti
 Jan 2026 : [Rp 3.703.500] ■■■■■■■■■■■■■■■■■■■■■■■■ (+76.57% — Rekor Semester Baru)
 ```
 
-* **Bukti Data (Evidence):** Pada Desember 2025, transaksi turun ke 244 order dengan omzet Rp 2.097.500. Namun di Januari 2026, permintaan meledak menjadi 356 order dengan omzet Rp 3.703.500 (+76,57% MoM).
-* **Dampak Bisnis (Impact):** Ketidakpastian *cashflow*. Biaya tetap operasional (*fixed overhead* seperti listrik dan sewa tempat) terus berjalan konstan di bulan Desember, namun pemasukan turun drastis.
-* **Solusi Rekomendasi (Mitigation):**
+- **Bukti Data (Evidence):** Pada Desember 2025, transaksi turun ke 244 order dengan omzet Rp 2.097.500. Namun di Januari 2026, permintaan meledak menjadi 356 order dengan omzet Rp 3.703.500 (+76,57% MoM).
+- **Dampak Bisnis (Impact):** Ketidakpastian _cashflow_. Biaya tetap operasional (_fixed overhead_ seperti listrik dan sewa tempat) terus berjalan konstan di bulan Desember, namun pemasukan turun drastis.
+- **Solusi Rekomendasi (Mitigation):**
   1. **Penetrasi B2B Retainer:** Tawarkan kerja sama pencetakan dokumen administratif rutin bulanan ke instansi perkantoran lokal, klinik kesehatan, kelurahan, dan lembaga bimbingan belajar yang tidak terikat libur sekolah formal.
   2. **Campaign Pra-Liburan (Late Nov):** Rilis promo khusus cetak kalender dinding/meja kustom, jilid rekap buku tahunan, dan kebutuhan administrasi tutup tahun sekolah pada akhir November.
 
 ---
 
 ### 🟡 Problem 02: Disparitas Margin yang Timpang Antara Jasa vs Produk ATK
+
 `Severity: HIGH` • `Area: Inventory Capital & Profitability`
 
 <div align="center">
@@ -165,17 +169,18 @@ KONTRIBUSI LABA KOTOR TOKO (GROSS PROFIT SHARE)
 
 </div>
 
-* **Bukti Data (Evidence):**
+- **Bukti Data (Evidence):**
   - **Layanan Jasa:** Menyerap kuantitas 7.019 unit jasa, meraup pendapatan Rp 6,81 jt dan mencetak laba kotor **Rp 4,08 jt** (**Margin: 59,89%**).
   - **Produk ATK:** Dari omzet Rp 6,15 jt, hanya mampu menghasilkan laba kotor **Rp 1,79 jt** (**Margin: 29,03%**).
-* **Dampak Bisnis (Impact):** Modal kerja (*working capital*) toko banyak tersandera pada inventaris barang fisik ATK yang marginnya tipis dan perputarannya lambat.
-* **Solusi Rekomendasi (Mitigation):**
-  1. **Cross-Selling & Bundling:** Pasangkan jasa bermargin tinggi dengan produk fisik. Contoh paket: *"Cetak 1 Bundel Skripsi/Tugas Akhir GRATIS Map Plastik / Diskon 20% Binder"* untuk menghabiskan stok fisik sekaligus mempertahankan volume jasa.
-  2. **SKU Rationalization (80/20 Rule):** Eliminasi varian ATK yang lambat terjual (*slow-moving*). Alokasikan modal inventaris hanya pada produk terbukti laris seperti Buku Tulis 100 Lembar (RR054 - Rp 350 rb revenue), kertas HVS ream, dan pulpen standar.
+- **Dampak Bisnis (Impact):** Modal kerja (_working capital_) toko banyak tersandera pada inventaris barang fisik ATK yang marginnya tipis dan perputarannya lambat.
+- **Solusi Rekomendasi (Mitigation):**
+  1. **Cross-Selling & Bundling:** Pasangkan jasa bermargin tinggi dengan produk fisik. Contoh paket: _"Cetak 1 Bundel Skripsi/Tugas Akhir GRATIS Map Plastik / Diskon 20% Binder"_ untuk menghabiskan stok fisik sekaligus mempertahankan volume jasa.
+  2. **SKU Rationalization (80/20 Rule):** Eliminasi varian ATK yang lambat terjual (_slow-moving_). Alokasikan modal inventaris hanya pada produk terbukti laris seperti Buku Tulis 100 Lembar (RR054 - Rp 350 rb revenue), kertas HVS ream, dan pulpen standar.
 
 ---
 
 ### 🟠 Problem 03: Penumpukan Kapasitas pada Jam Puncak (Peak-Hour Bottlenecks)
+
 `Severity: MEDIUM` • `Area: Store Operations & Customer Experience`
 
 ```text
@@ -195,9 +200,9 @@ DISTRIBUSI TRANSAKSI BERDASARKAN JAM OPERASIONAL:
 20:00 - 21:00 | ███▋ 3.72% (53 orders)
 ```
 
-* **Bukti Data (Evidence):** Jam operasional 07:00–09:00 dan 16:00–17:00 melayani lebih dari **58,4% dari seluruh transaksi toko**. Jam 12:00–13:00 praktis mendekati nol transaksi.
-* **Dampak Bisnis (Impact):** Terjadi antrean panjang pada mesin cetak di pagi dan sore hari. Pelanggan berpotensi membatalkan transaksi karena terburu-buru masuk sekolah/kantor, sementara operator dan mesin menganggur (*idle*) pada jam siang.
-* **Solusi Rekomendasi (Mitigation):**
+- **Bukti Data (Evidence):** Jam operasional 07:00–09:00 dan 16:00–17:00 melayani lebih dari **58,4% dari seluruh transaksi toko**. Jam 12:00–13:00 praktis mendekati nol transaksi.
+- **Dampak Bisnis (Impact):** Terjadi antrean panjang pada mesin cetak di pagi dan sore hari. Pelanggan berpotensi membatalkan transaksi karena terburu-buru masuk sekolah/kantor, sementara operator dan mesin menganggur (_idle_) pada jam siang.
+- **Solusi Rekomendasi (Mitigation):**
   1. **Pre-Order Digital via WhatsApp / Cloud Print:** Pelanggan mengirimkan dokumen via WA pada malam hari atau sebelum jam 07:00 pagi. Operator mengerjakan cetakan saat jam sepi (10:00–14:00), sehingga pelanggan tinggal mengambil dokumen jadi pada sore hari tanpa mengantre.
   2. **Mesin Ekspres Khusus (Express Lane):** Dedikasikan satu perangkat fotocopy khusus untuk transaksi kilat (≤ 5 lembar) agar pelanggan reguler tidak terhambat oleh antrean cetak buku/makalah tebal.
 
@@ -207,13 +212,13 @@ DISTRIBUSI TRANSAKSI BERDASARKAN JAM OPERASIONAL:
 
 ### 5.1. Analisis Kinerja Bulanan & Tren MoM
 
-| Periode Analisis | Pendapatan (Revenue) | Transaksi (Orders) | AOV (Rata-rata) | Tren MoM (Omzet) | Indikator Status Bisnis |
-|---|:---:|:---:|:---:|:---:|---|
-| **September 2025** | Rp 2.370.000,00 | 258 | Rp 9.186,05 | — | *Baseline Normal* |
-| **Oktober 2025** | Rp 2.476.000,00 | 291 | Rp 8.508,59 | `▲ +4.47%` | *Aktivitas Belajar Stabil* |
-| **November 2025** | Rp 2.315.000,00 | 274 | Rp 8.448,91 | `▼ -6.50%` | *Menjelang Ujian Akhir* |
-| **Desember 2025** | Rp 2.097.500,00 | 244 | Rp 8.596,31 | `▼ -9.39%` | *Titik Terendah (Libur Semester)* |
-| **Januari 2026** | Rp 3.703.500,00 | 356 | Rp 10.403,09 | `▲ +76.57%` | *Rekor Puncak (Tahun Ajaran Baru)* |
+| Periode Analisis   | Pendapatan (Revenue) | Transaksi (Orders) | AOV (Rata-rata) | Tren MoM (Omzet) | Indikator Status Bisnis            |
+| ------------------ | :------------------: | :----------------: | :-------------: | :--------------: | ---------------------------------- |
+| **September 2025** |   Rp 2.370.000,00    |        258         |   Rp 9.186,05   |        —         | _Baseline Normal_                  |
+| **Oktober 2025**   |   Rp 2.476.000,00    |        291         |   Rp 8.508,59   |    `▲ +4.47%`    | _Aktivitas Belajar Stabil_         |
+| **November 2025**  |   Rp 2.315.000,00    |        274         |   Rp 8.448,91   |    `▼ -6.50%`    | _Menjelang Ujian Akhir_            |
+| **Desember 2025**  |   Rp 2.097.500,00    |        244         |   Rp 8.596,31   |    `▼ -9.39%`    | _Titik Terendah (Libur Semester)_  |
+| **Januari 2026**   |   Rp 3.703.500,00    |        356         |  Rp 10.403,09   |   `▲ +76.57%`    | _Rekor Puncak (Tahun Ajaran Baru)_ |
 
 ---
 
@@ -228,28 +233,28 @@ Top Products Revenue Contribution:
 5. RR002 - Fotocopy Warna       [Rp   302.000] ───  2.33%
 ```
 
-| Kode SKU | Nama Barang / Layanan | Kategori | Tipe | Omzet (Subtotal) | Modal (Cost) | Laba Kotor (GP) | Gross Margin |
-|:---:|---|---|:---:|:---:|:---:|:---:|:---:|
-| 🥇 `RR001` | **Fotocopy Hitam Putih** | Jasa Fotocopy | Service | Rp 2.383.500 | Rp 955.400 | Rp 1.428.100 | **59,91%** |
-| 🥈 `RR003` | **Print Hitam Putih** | Jasa Printing | Service | Rp 1.512.000 | Rp 604.800 | Rp 907.200 | **60,00%** |
-| 🥉 `RR004` | **Print Warna** | Jasa Printing | Service | Rp 684.000 | Rp 273.600 | Rp 410.400 | **60,00%** |
-| 4 `RR054` | **Buku Tulis 100 Lembar** | Buku & Notebook | Product | Rp 350.000 | Rp 245.000 | Rp 105.000 | **30,00%** |
-| 5 `RR002` | **Fotocopy Warna** | Jasa Fotocopy | Service | Rp 302.000 | Rp 90.600 | Rp 211.400 | **70,00%** |
+|  Kode SKU  | Nama Barang / Layanan     | Kategori        |  Tipe   | Omzet (Subtotal) | Modal (Cost) | Laba Kotor (GP) | Gross Margin |
+| :--------: | ------------------------- | --------------- | :-----: | :--------------: | :----------: | :-------------: | :----------: |
+| 🥇 `RR001` | **Fotocopy Hitam Putih**  | Jasa Fotocopy   | Service |   Rp 2.383.500   |  Rp 955.400  |  Rp 1.428.100   |  **59,91%**  |
+| 🥈 `RR003` | **Print Hitam Putih**     | Jasa Printing   | Service |   Rp 1.512.000   |  Rp 604.800  |   Rp 907.200    |  **60,00%**  |
+| 🥉 `RR004` | **Print Warna**           | Jasa Printing   | Service |    Rp 684.000    |  Rp 273.600  |   Rp 410.400    |  **60,00%**  |
+| 4 `RR054`  | **Buku Tulis 100 Lembar** | Buku & Notebook | Product |    Rp 350.000    |  Rp 245.000  |   Rp 105.000    |  **30,00%**  |
+| 5 `RR002`  | **Fotocopy Warna**        | Jasa Fotocopy   | Service |    Rp 302.000    |  Rp 90.600   |   Rp 211.400    |  **70,00%**  |
 
 ---
 
-### 5.3. Penetrasi Metode Pembayaran (Digital vs Cash)
+### 5.3. Metode Pembayaran (Digital vs Cash)
 
 ```text
 Distribusi Metode Pembayaran Toko:
 [================= TUNAI (56.00%) =================] [=========== QRIS (37.56%) ===========] [== TRANSFER (6.44%) ==]
 ```
 
-| Kanal Pembayaran | Frekuensi Order | Pangsa Order | Akumulasi Omzet | Pangsa Omzet | Nilai Rata-rata (AOV) |
-|---|:---:|:---:|:---:|:---:|:---:|
-| **Tunai (Cash)** | 804 | 56,50% | Rp 7.258.500,00 | 56,00% | Rp 9.028,00 |
-| **QRIS** | 535 | 37,60% | Rp 4.869.000,00 | 37,56% | Rp 9.100,93 |
-| **Transfer Bank** | 84 | 5,90% | Rp 834.500,00 | 6,44% | Rp 9.934,52 |
+| Kanal Pembayaran  | Frekuensi Order | Pangsa Order | Akumulasi Omzet | Pangsa Omzet | Nilai Rata-rata (AOV) |
+| ----------------- | :-------------: | :----------: | :-------------: | :----------: | :-------------------: |
+| **Tunai (Cash)**  |       804       |    56,50%    | Rp 7.258.500,00 |    56,00%    |      Rp 9.028,00      |
+| **QRIS**          |       535       |    37,60%    | Rp 4.869.000,00 |    37,56%    |      Rp 9.100,93      |
+| **Transfer Bank** |       84        |    5,90%     |  Rp 834.500,00  |    6,44%     |      Rp 9.934,52      |
 
 > [!TIP]
 > **Adopsi Cashless:** Sebanyak **44,00% dari total omzet toko** kini berasal dari kanal digital (QRIS + Transfer). Transaksi non-tunai terbukti menghasilkan AOV lebih tinggi dibandingkan tunai. Penempatan kode QRIS yang ergonomis dan kasir yang responsif sangat krusial bagi kelancaran operasional.
@@ -258,49 +263,51 @@ Distribusi Metode Pembayaran Toko:
 
 ### 5.4. Pola Siklus Hari Operasional (Day-of-Week Behavior)
 
-| Hari Operasional | Transaksi (Orders) | Pendapatan (Revenue) | Kontribusi Omzet | Analisis Operasional & Traffic |
-|---|:---:|:---:|:---:|---|
-| **Senin** | **252** | **Rp 2.502.000,00** | **19,30%** | 🏆 **Hari Tersibuk:** Pencetakan tugas awal pekan & dinas. |
-| **Selasa** | 225 | Rp 2.127.000,00 | 16,41% | Beban transaksi tinggi dan konsisten. |
-| **Rabu** | 253 | Rp 2.209.000,00 | 17,04% | Puncak kedua pengumpulan tugas sekolah/kampus. |
-| **Kamis** | 201 | Rp 1.708.000,00 | 13,18% | Aktivitas harian menengah. |
-| **Jumat** | 178 | Rp 1.623.000,00 | 12,52% | Jam buka terpotong ibadah sholat Jumat. |
-| **Sabtu** | 205 | Rp 1.875.500,00 | 14,47% | Kebutuhan cetak akhir pekan / persiapan les. |
-| **Minggu** | **109** | **Rp 917.500,00** | **7,08%** | 💤 **Hari Terlengang:** Cocok untuk pemeliharaan mesin/toner. |
+| Hari Operasional | Transaksi (Orders) | Pendapatan (Revenue) | Kontribusi Omzet | Analisis Operasional & Traffic                                |
+| ---------------- | :----------------: | :------------------: | :--------------: | ------------------------------------------------------------- |
+| **Senin**        |      **252**       | **Rp 2.502.000,00**  |    **19,30%**    | 🏆 **Hari Tersibuk:** Pencetakan tugas awal pekan & dinas.    |
+| **Selasa**       |        225         |   Rp 2.127.000,00    |      16,41%      | Beban transaksi tinggi dan konsisten.                         |
+| **Rabu**         |        253         |   Rp 2.209.000,00    |      17,04%      | Puncak kedua pengumpulan tugas sekolah/kampus.                |
+| **Kamis**        |        201         |   Rp 1.708.000,00    |      13,18%      | Aktivitas harian menengah.                                    |
+| **Jumat**        |        178         |   Rp 1.623.000,00    |      12,52%      | Jam buka terpotong ibadah sholat Jumat.                       |
+| **Sabtu**        |        205         |   Rp 1.875.500,00    |      14,47%      | Kebutuhan cetak akhir pekan / persiapan les.                  |
+| **Minggu**       |      **109**       |  **Rp 917.500,00**   |    **7,08%**     | 💤 **Hari Terlengang:** Cocok untuk pemeliharaan mesin/toner. |
 
 ---
 
 ## 🔮 6. Pemodelan & Hasil Proyeksi (Forecasting Februari 2026)
 
-Proses pemodelan peramalan time-series dilakukan menggunakan skrip produksi Python [`python/forecast.py`](file:///c:/dev/project/fc-raffarafli-data-analyst/python/forecast.py). Dataset dibangun dengan *complete calendar date-spine* (153 hari kalender) untuk mempertahankan hari tanpa transaksi (*zero-sales days*).
+Proses pemodelan peramalan time-series dilakukan menggunakan skrip produksi Python [`python/forecast.py`](file:///c:/dev/project/fc-raffarafli-data-analyst/python/forecast.py). Dataset dibangun dengan _complete calendar date-spine_ (153 hari kalender) untuk mempertahankan hari tanpa transaksi (_zero-sales days_).
 
-Metodologi validasi menggunakan **Holdout Backtesting 28 hari** (4 Januari 2026 s.d. 31 Januari 2026). Metrik seleksi utama adalah **WAPE (*Weighted Absolute Percentage Error*)** karena MAPE menghasilkan nilai tidak terdefinisi (*division by zero*) saat transaksi bernilai 0.
+Metodologi validasi menggunakan **Holdout Backtesting 28 hari** (4 Januari 2026 s.d. 31 Januari 2026). Metrik seleksi utama adalah **WAPE (_Weighted Absolute Percentage Error_)** karena MAPE menghasilkan nilai tidak terdefinisi (_division by zero_) saat transaksi bernilai 0.
 
 ### 6.1. Papan Peringkat Evaluasi Model (Holdout Benchmark)
 
 #### Target A: Volume Transaksi Harian (`order_count`)
-| Model Kandidat | WAPE (%) | MAE (Order) | RMSE | Status Seleksi |
-|---|:---:|:---:|:---:|:---:|
-| 🏆 **SARIMA(1,0,1)(1,0,1)₇** | **37,42%** | **4,40** | **5,96** | **CHAMPION MODEL** ✅ |
-| Mean Baseline | 41,79% | 4,91 | 6,43 | Baseline |
-| 7-Day Moving Average | 52,67% | 6,19 | 7,89 | Benchmark |
-| Holt-Winters Exponential | 53,35% | 6,27 | 7,92 | Benchmark |
-| Seasonal Naive 7D | 73,86% | 8,68 | 10,09 | Benchmark |
-| Naive Last-Value | 75,08% | 8,82 | 10,02 | Benchmark |
+
+| Model Kandidat               |  WAPE (%)  | MAE (Order) |   RMSE   |    Status Seleksi     |
+| ---------------------------- | :--------: | :---------: | :------: | :-------------------: |
+| 🏆 **SARIMA(1,0,1)(1,0,1)₇** | **37,42%** |  **4,40**   | **5,96** | **CHAMPION MODEL** ✅ |
+| Mean Baseline                |   41,79%   |    4,91     |   6,43   |       Baseline        |
+| 7-Day Moving Average         |   52,67%   |    6,19     |   7,89   |       Benchmark       |
+| Holt-Winters Exponential     |   53,35%   |    6,27     |   7,92   |       Benchmark       |
+| Seasonal Naive 7D            |   73,86%   |    8,68     |  10,09   |       Benchmark       |
+| Naive Last-Value             |   75,08%   |    8,82     |  10,02   |       Benchmark       |
 
 #### Target B: Nilai Pendapatan Harian (`revenue`)
-| Model Kandidat | WAPE (%) | MAE (Rp) | RMSE | Status Seleksi |
-|---|:---:|:---:|:---:|:---:|
-| 🏆 **Mean Baseline** | **50,17%** | **Rp 59.077,14** | **Rp 92.965,36** | **CHAMPION MODEL** ✅ |
-| 7-Day Moving Average | 50,37% | Rp 59.306,12 | Rp 93.198,96 | Benchmark |
-| Holt-Winters Exponential | 56,05% | Rp 65.995,76 | Rp 82.764,79 | Benchmark |
-| Seasonal Naive 7D | 89,38% | Rp 105.250,00 | Rp 134.351,95 | Benchmark |
-| SARIMA(1,0,1)(1,0,1)₇ | 130,00% | Rp 153.071,51 | Rp 161.290,27 | Overfit / Unstable |
-| Naive Last-Value | 144,16% | Rp 169.750,00 | Rp 187.478,09 | Benchmark |
+
+| Model Kandidat           |  WAPE (%)  |     MAE (Rp)     |       RMSE       |    Status Seleksi     |
+| ------------------------ | :--------: | :--------------: | :--------------: | :-------------------: |
+| 🏆 **Mean Baseline**     | **50,17%** | **Rp 59.077,14** | **Rp 92.965,36** | **CHAMPION MODEL** ✅ |
+| 7-Day Moving Average     |   50,37%   |   Rp 59.306,12   |   Rp 93.198,96   |       Benchmark       |
+| Holt-Winters Exponential |   56,05%   |   Rp 65.995,76   |   Rp 82.764,79   |       Benchmark       |
+| Seasonal Naive 7D        |   89,38%   |  Rp 105.250,00   |  Rp 134.351,95   |       Benchmark       |
+| SARIMA(1,0,1)(1,0,1)₇    |  130,00%   |  Rp 153.071,51   |  Rp 161.290,27   |  Overfit / Unstable   |
+| Naive Last-Value         |  144,16%   |  Rp 169.750,00   |  Rp 187.478,09   |       Benchmark       |
 
 > [!NOTE]
 > **Mengapa Mean Baseline Terpilih untuk Revenue?**  
-> Data transaksi toko fotocopy memiliki varians harian ekstrim akibat pesanan borongan sesekali (*lumpy demand spike*). Model parametrik kompleks seperti SARIMA mengalami *overfitting* terhadap lonjakan abnormal Januari, sehingga model *Mean Baseline* terbukti lebih tangguh dan akurat dengan tingkat *error* terendah (WAPE 50,17%).
+> Data transaksi toko fotocopy memiliki varians harian ekstrim akibat pesanan borongan sesekali (_lumpy demand spike_). Model parametrik kompleks seperti SARIMA mengalami _overfitting_ terhadap lonjakan abnormal Januari, sehingga model _Mean Baseline_ terbukti lebih tangguh dan akurat dengan tingkat _error_ terendah (WAPE 50,17%).
 
 ---
 
@@ -313,8 +320,8 @@ Ringkasan Hasil Proyeksi Februari 2026 (2026-02-01 s.d. 2026-02-28):
 └── Rentang Keyakinan 95%   : Rp 0,00 s.d. Rp 192.350,12 / hari
 ```
 
-* **Interpretasi Perencanaan Kas:** Setelah ledakan omzet tahun ajaran baru di Januari (Rp 3,70 jt), bisnis diprediksi kembali stabil di kisaran normal **Rp 2,3 juta – Rp 2,4 juta**, sejalan dengan pola bulan September–November 2025.
-* **Tindakan Manajemen:** Tidak disarankan melakukan pembelian bahan baku kertas secara berlebihan di bulan Februari untuk menghindari penumpukan modal mati.
+- **Interpretasi Perencanaan Kas:** Setelah ledakan omzet tahun ajaran baru di Januari (Rp 3,70 jt), bisnis diprediksi kembali stabil di kisaran normal **Rp 2,3 juta – Rp 2,4 juta**, sejalan dengan pola bulan September–November 2025.
+- **Tindakan Manajemen:** Tidak disarankan melakukan pembelian bahan baku kertas secara berlebihan di bulan Februari untuk menghindari penumpukan modal mati.
 
 ---
 
@@ -342,11 +349,11 @@ PRIORITY ACTION MATRIX:
 
 ### 📅 Roadmap Eksekusi 30 - 60 - 90 Hari
 
-| Fase Eksekusi | Inisiatif & Rencana Aksi | Output & Target yang Diharapkan |
-|---|---|---|
-| **Fase 1: Quick Wins**<br>*(Hari 1 – 30)* | 1. **Layanan Pre-Order Cetak via WhatsApp:** Cetak banner nomor kontak WA khusus pre-order di depan toko.<br>2. **Jalur Cepat Fotocopy Kilat:** Alokasikan 1 mesin khusus transaksi ≤ 5 lembar pada jam sibuk pagi (07:00–09:00).<br>3. **Optimalisasi QRIS:** Posisikan barcode QRIS di meja kasir setinggi mata pelanggan. | Mengurangi antrean fisik jam sibuk hingga 30% dan menekan angka pembatalan belanja. |
-| **Fase 2: Optimasi Margin**<br>*(Hari 31 – 60)* | 1. **Paket Bundling Jasa-Produk:** Buat paket *"Jilid Skripsi/Laporan FREE/Diskon Map Plastik"*, memanfaatkan margin jasa 60% untuk mengalirkan stok ATK.<br>2. **Rasionalisasi SKU ATK:** Hentikan restock barang ATK yang terjual < 2 kali dalam 5 bulan. Fokuskan modal pada Buku Tulis 100 Lbr dan Kertas HVS. | Mempercepat perputaran inventaris ATK dan menaikkan AOV sebesar 10-15%. |
-| **Fase 3: Pengamanan Kas**<br>*(Hari 61 – 90)* | 1. **Penawaran Retainer B2B:** Ajukan proposal pasokan ATK & jasa print ke 5–10 kantor, klinik, atau tempat les terdekat dengan sistem tagihan bulanan.<br>2. **Penyesuaian Jadwal Hari Minggu:** Kurangi jam buka toko di hari Minggu menjadi jam pemeliharaan rutin mesin dan rekap administrasi. | Menciptakan pemasukan dasar (*recurring revenue*) untuk menahan penurunan omzet saat libur sekolah berikutnya. |
+| Fase Eksekusi                                   | Inisiatif & Rencana Aksi                                                                                                                                                                                                                                                                                                     | Output & Target yang Diharapkan                                                                                |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Fase 1: Quick Wins**<br>_(Hari 1 – 30)_       | 1. **Layanan Pre-Order Cetak via WhatsApp:** Cetak banner nomor kontak WA khusus pre-order di depan toko.<br>2. **Jalur Cepat Fotocopy Kilat:** Alokasikan 1 mesin khusus transaksi ≤ 5 lembar pada jam sibuk pagi (07:00–09:00).<br>3. **Optimalisasi QRIS:** Posisikan barcode QRIS di meja kasir setinggi mata pelanggan. | Mengurangi antrean fisik jam sibuk hingga 30% dan menekan angka pembatalan belanja.                            |
+| **Fase 2: Optimasi Margin**<br>_(Hari 31 – 60)_ | 1. **Paket Bundling Jasa-Produk:** Buat paket _"Jilid Skripsi/Laporan FREE/Diskon Map Plastik"_, memanfaatkan margin jasa 60% untuk mengalirkan stok ATK.<br>2. **Rasionalisasi SKU ATK:** Hentikan restock barang ATK yang terjual < 2 kali dalam 5 bulan. Fokuskan modal pada Buku Tulis 100 Lbr dan Kertas HVS.           | Mempercepat perputaran inventaris ATK dan menaikkan AOV sebesar 10-15%.                                        |
+| **Fase 3: Pengamanan Kas**<br>_(Hari 61 – 90)_  | 1. **Penawaran Retainer B2B:** Ajukan proposal pasokan ATK & jasa print ke 5–10 kantor, klinik, atau tempat les terdekat dengan sistem tagihan bulanan.<br>2. **Penyesuaian Jadwal Hari Minggu:** Kurangi jam buka toko di hari Minggu menjadi jam pemeliharaan rutin mesin dan rekap administrasi.                          | Menciptakan pemasukan dasar (_recurring revenue_) untuk menahan penurunan omzet saat libur sekolah berikutnya. |
 
 ---
 
@@ -394,12 +401,15 @@ fc-raffarafli-data-analyst/
 ## ⚡ 9. Panduan Replikasi Analisis (How to Reproduce)
 
 ### 1. Prasyarat Lingkungan
-* Python 3.9+ (`pandas`, `numpy`, `statsmodels`)
-* PostgreSQL 14+ atau DBeaver Community Client
-* Microsoft Excel 2016+ / Microsoft 365
+
+- Python 3.9+ (`pandas`, `numpy`, `statsmodels`)
+- PostgreSQL 14+ atau DBeaver Community Client
+- Microsoft Excel 2016+ / Microsoft 365
 
 ### 2. Eksekusi Skrip Database PostgreSQL
+
 Buka terminal dan jalankan skrip SQL secara terurut:
+
 ```bash
 # Inisialisasi skema dan struktur tabel
 psql -U postgres -d retail_analytics -f sql/01_create_schema.sql
@@ -414,10 +424,12 @@ psql -U postgres -d retail_analytics -f sql/05_business_analysis.sql
 ```
 
 ### 3. Eksekusi Engine Forecasting Python
+
 ```bash
 cd python
 python forecast.py
 ```
+
 Output evaluasi model dan prediksi 28 hari ke depan akan otomatis terbarui di folder `data/processed/`.
 
 ---
@@ -425,16 +437,14 @@ Output evaluasi model dan prediksi 28 hari ke depan akan otomatis terbarui di fo
 ## ⚠️ 10. Batasan Data & Batasan Analisis (Data Limitations)
 
 Sebagai wujud integritas dan kejujuran seorang profesional analitis, beberapa batasan data berikut dicatat secara transparan:
-1. **Ketiadaan ID Pelanggan (`customer_id`):** Sumber data mentah tidak mencatat identitas pelanggan. Analisis *retensi, churn rate, Customer Lifetime Value (CLV)*, atau segmentasi RFM dinyatakan `NOT SUPPORTED BY DATASET`.
-2. **Ketiadaan Data Stok Gudang:** Field `stock` tidak tersedia dalam tabel produk aktual. Analisis perputaran inventaris (*inventory turnover*) atau *stockout prediction* tidak dapat diklaim.
-3. **Horizon Historis Terbatas (5 Bulan):** Periode observasi (Sep 2025 – Jan 2026) belum memadai untuk mengekstrak musiman tahunan (*Year-over-Year / YoY seasonality*).
-4. **Estimasi Biaya Langsung (`unit_cost`):** Modal yang tercatat merupakan biaya langsung barang/kertas, belum mencakup biaya penyusutan mesin (*depreciation*), tagihan listrik, dan upah operator toko.
+
+1. **Ketiadaan ID Pelanggan (`customer_id`):** Sumber data mentah tidak mencatat identitas pelanggan. Analisis _retensi, churn rate, Customer Lifetime Value (CLV)_, atau segmentasi RFM dinyatakan `NOT SUPPORTED BY DATASET`.
+2. **Ketiadaan Data Stok Gudang:** Field `stock` tidak tersedia dalam tabel produk aktual. Analisis perputaran inventaris (_inventory turnover_) atau _stockout prediction_ tidak dapat diklaim.
+3. **Horizon Historis Terbatas (5 Bulan):** Periode observasi (Sep 2025 – Jan 2026) belum memadai untuk mengekstrak musiman tahunan (_Year-over-Year / YoY seasonality_).
+4. **Estimasi Biaya Langsung (`unit_cost`):** Modal yang tercatat merupakan biaya langsung barang/kertas, belum mencakup biaya penyusutan mesin (_depreciation_), tagihan listrik, dan upah operator toko.
 
 ---
 
 <div align="center">
-
-**Disusun dan Dipelihara oleh Tim Data Analytics & IT Intelligence**  
-*Mengubah Data Transaksional Mentah Menjadi Keputusan Bisnis yang Terukur dan Menguntungkan.*
 
 </div>
